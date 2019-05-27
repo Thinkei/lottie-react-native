@@ -88,11 +88,6 @@ class LottieAnimationViewManager extends SimpleViewManager<LottieAnimationView> 
     }
   }
 
-  @ReactProp(name = "androidAssetFolder")
-  public void setAndroidAssetFolder(LottieAnimationView view, String folderName) {
-    view.setImageAssetsFolder(folderName.endsWith("/") ? folderName : folderName.concat("/"));
-  }
-
   @ReactProp(name = "progress")
   public void setProgress(LottieAnimationView view, float progress) {
     view.setProgress(progress);
